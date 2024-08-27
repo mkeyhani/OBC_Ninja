@@ -2,6 +2,7 @@
 <html>
    <head>
       <title>OBC Ninja</title>
+      <script type="text/javascript" src="script.js"></script>
 
       <style>
 .grey {
@@ -11,6 +12,41 @@
 .red {
   background: #ea9999;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.patterned {
+  background-color: #456259;
+  background-image:
+    repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+}
+
+
+table.table1 {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+table.table1 th {
+  border: 1px solid black;
+}
+
+table.table1 td {
+  border: 1px solid black;
+}
+
+/*hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}*/
+
       </style>
    </head>
    <body>
@@ -18,10 +54,11 @@
       <h1>OBC Ninja</h1>
       <h2>An Unofficial Version of the Ontario Building Code</h2>
    </center>
-   <hr>
+   <div style="margin: 0; width:100%; height: 20px; display: block;" class="patterned"></div>
+   <!-- <hr> -->
 
 
-<div style="margin: 0 auto; max-width: 800px">
+<div style="margin: 0 auto; max-width: 800px" id="CONTENT">
 <h1>Preface</h1>
 
 <h2>Introduction</h2>
@@ -44,9 +81,9 @@
 
 <p>The 2012 Building Code is Ontario’s second edition of the Building Code published in an objective-based format.  The objective-based format augments specific technical requirements by identifying the underlying objectives and sub-objectives of those requirements (see table below).  Each technical requirement that is an acceptable solution in Division B is linked to one or more of the objectives, as well as functional statements, through the Attribution Tables in Supplementary Standard SA-1.  Some objectives were developed jointly by the NRC and Canadian provincial/territorial jurisdictions.</p>
 
-<b>OBJECTIVES AND SUB-OBJECTIVES OF THE BUILDING CODE</b>
+<center><b>OBJECTIVES AND SUB-OBJECTIVES OF THE BUILDING CODE</b></center><br>
 
-<table>
+<table class="table1">
   <tr>
     <th>Objective</th>
     <th>Sub-Objective</th>
